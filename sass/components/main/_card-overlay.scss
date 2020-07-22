@@ -1,0 +1,36 @@
+/* Блок с картинкой в карточке */
+
+.projects-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-overlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: $primary-white-color;
+
+  transition: transform $animation-duration $timing-function;
+
+  .card:hover &,
+  .card:focus-within & {
+    transform: translateY(-100%);
+  }
+}
+
+.hover-shadow {
+  position: absolute;
+  display: flex;
+
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.service-title {
+  display: none;
+}

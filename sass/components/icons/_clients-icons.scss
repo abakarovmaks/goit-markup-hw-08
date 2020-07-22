@@ -1,0 +1,11 @@
+// Оформление ИКОНОК в НАШИ КЛИЕНТЫ
+
+.icon-customers {
+  fill: $svg-main-color;
+  transition: fill $animation-duration $timing-function;
+
+  .customers:hover &,
+  .customers:focus & {
+    fill: $accent-color;
+  }
+}

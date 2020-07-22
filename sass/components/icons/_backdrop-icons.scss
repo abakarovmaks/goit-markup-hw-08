@@ -1,0 +1,53 @@
+/* Оформление иконок в бэкдропе */
+
+.icon-modal {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+
+  transition: fill $animation-duration $timing-function;
+
+  &-input {
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    transition: fill $animation-duration $timing-function;
+
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  }
+
+  .button-modal:hover > & {
+    fill: $accent-color;
+  }
+}
+
+.button-modal {
+  @extend %flex;
+  justify-content: center;
+
+  position: absolute;
+
+  width: 30px;
+  height: 30px;
+
+  right: 8px;
+  top: 8px;
+
+  background: $primary-white-color;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-input:hover ~ .icon-modal-input,
+.form-input:focus ~ .icon-modal-input,
+.form-input:not(:placeholder-shown) ~ .icon-modal-input {
+  fill: $accent-color;
+}
+
+.form-input:focus {
+  border-color: $accent-color;
+}

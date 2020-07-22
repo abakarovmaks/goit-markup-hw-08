@@ -1,0 +1,51 @@
+/* Оформление кастомного чекбокса */
+
+.check {
+  margin-bottom: 30px;
+  padding-left: 1.2em;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $title-text-color-secondary;
+
+  &-input {
+    position: absolute;
+    widows: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked + .check-box {
+      background-color: $accent-color;
+      background-image: url(../images/check.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &:hover + .check-box {
+      box-shadow: 0 0 0 0.2em green;
+    }
+
+    &:focus + .check-box {
+      box-shadow: 0 0 0 0.2em green, 0 0 0 0.1em $accent-color;
+    }
+  }
+
+  &-box {
+    position: absolute;
+
+    margin-top: 0.5em;
+    margin-left: -1em;
+    width: 0.6em;
+    height: 0.6em;
+    box-shadow: 0 0 0 0.1em $accent-color;
+    border-radius: 0.05em;
+
+    background-color: $primary-white-color;
+
+    transition: background-color $animation-duration $timing-function,
+      box-shadow $animation-duration $timing-function;
+  }
+}

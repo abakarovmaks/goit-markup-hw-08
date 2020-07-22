@@ -1,0 +1,17 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1600px;
+  margin: auto;
+
+  &.main,
+  &.apps,
+  &.team,
+  &.clients {
+    text-align: center;
+  }
+
+  &-footer {
+    @extend %flex;
+  }
+}

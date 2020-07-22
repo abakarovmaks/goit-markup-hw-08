@@ -1,0 +1,224 @@
+// ФУТЕР
+footer {
+  background-color: $footer-color;
+}
+
+.adress-footer {
+  color: $primary-white-color;
+  padding-bottom: 9px;
+}
+
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: $primary-white-color;
+
+  transition: color $animation-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
+  transition: color $animation-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $animation-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-padding {
+  list-style: none;
+}
+
+footer > .container {
+  @extend %flex;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.connect {
+  color: $primary-white-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  padding-bottom: 20px;
+}
+
+.footer-list {
+  @extend %flex;
+}
+
+.footer-container-first {
+  margin-bottom: 60px;
+  margin-top: 60px;
+
+  margin-right: 69px;
+}
+
+.footer-container-second {
+  margin-right: 94px;
+}
+
+.footer-container-third {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links-footer {
+  @extend %flex;
+
+  justify-content: center;
+
+  height: 44px;
+  width: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: $primary-white-color;
+
+  padding: 0;
+  border: none;
+
+  transition: background-color $animation-duration $timing-function;
+
+  .social-list:hover &,
+  .social-list:focus-within & {
+    background-color: $accent-color;
+  }
+}
+
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedin-footer {
+  fill: $primary-white-color;
+}
+
+.social-list {
+  margin-right: 10px;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 12px;
+  line-height: 2;
+
+  padding-top: 18px;
+  padding-bottom: 21px;
+
+  text-align: center;
+}
+
+/* Оформление формы в футере */
+
+.form-field {
+  padding: 18px 12px;
+  margin-right: 12px;
+  height: 50px;
+  min-width: 358px;
+
+  color: $primary-white-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-footer {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 29px;
+
+  width: 200px;
+  height: 50px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  background-color: $accent-color;
+  color: $primary-white-color;
+
+  transition: color $animation-duration $timing-function,
+    background-color $animation-duration $timing-function;
+
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-image: url(../images/sendfooter.svg);
+
+    transition: transform $animation-duration $timing-function;
+  }
+
+  &:before {
+    position: absolute;
+    left: 135px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-image: url(../images/sendfooter2.svg);
+
+    transform: translateY(40px);
+
+    transition: transform $animation-duration $timing-function;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-white-color;
+    color: $accent-color;
+
+    &::before {
+      transform: translateY(0px);
+    }
+
+    &::after {
+      transform: translateY(-40px);
+    }
+  }
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  margin-top: 72px;
+  margin-bottom: 94px;
+}

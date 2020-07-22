@@ -1,0 +1,33 @@
+/* Клиенты INDEX */
+
+.customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  color: $title-text-color-secondary;
+
+  border: 1px solid $svg-main-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: --color2 $animation-duration $timing-function,
+    --color3 $animation-duration $timing-function,
+    border-color $animation-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    --color2: $accent-color;
+    --color3: $accent-color;
+  }
+}
+
+.list-clients {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 94px;
+}

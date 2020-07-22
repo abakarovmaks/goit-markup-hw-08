@@ -1,0 +1,17 @@
+/* Оформление иконок */
+
+.list-advantage div {
+  @extend %flex;
+  justify-content: center;
+
+  height: 120px;
+  background-color: $secondary-gray-color;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+.icon-advantage {
+  width: 70px;
+  height: 70px;
+}

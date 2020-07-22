@@ -1,0 +1,33 @@
+/* Лого INDEX и PORTFOLIO*/
+
+.logo {
+  display: block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  margin-right: 81px;
+
+  &-web {
+    color: $accent-color;
+  }
+
+  &-studio {
+    color: $title-text-color-primary;
+  }
+
+  &-footer {
+    margin-bottom: 20px;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+  }
+
+  &-studio-footer {
+    color: $primary-white-color;
+  }
+}

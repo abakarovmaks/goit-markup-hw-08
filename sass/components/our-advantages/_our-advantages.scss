@@ -1,0 +1,71 @@
+/* Преимущества INDEX */
+
+.advantage {
+  color: $title-text-color-primary;
+
+  &-upper-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &-bottom-title {
+    margin-bottom: 10px;
+  }
+
+  &-words {
+    color: $title-text-color-secondary;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-employment {
+    list-style: none;
+    display: flex;
+
+    padding-bottom: 94px;
+  }
+
+  &-team {
+    list-style: none;
+    display: flex;
+
+    padding-bottom: 94px;
+  }
+
+  &-services {
+    list-style: none;
+    display: flex;
+  }
+
+  &-item {
+    display: block;
+    margin-right: 30px;
+    background-color: $primary-white-color;
+  }
+
+  &-advantage {
+    margin-right: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.clients-list-item {
+  display: block;
+  margin-right: 30px;
+  background-color: $primary-white-color;
+}

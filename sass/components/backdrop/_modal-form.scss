@@ -1,0 +1,165 @@
+/* Оформление модального окна при бэкдропе */
+
+.form {
+  margin-top: 30px;
+
+  & textarea {
+    resize: none;
+    min-width: 100%;
+    min-height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  &-field-backdrop {
+    position: relative;
+    margin-bottom: 28px;
+
+    & .form-input {
+      height: 40px;
+      width: 100%;
+
+      padding: 16px 12px 16px 42px;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+
+      outline: none;
+    }
+  }
+
+  &-field-backdrop:first-child {
+    margin-top: 12px;
+  }
+
+  &-input:hover + .label-absolute,
+  &-input:focus + .label-absolute,
+  &-input:not(:placeholder-shown) + .label-absolute {
+    transform: translate(-20px, -40px);
+
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: $accent-color;
+  }
+}
+
+.label-absolute {
+  position: absolute;
+
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+
+  top: 50%;
+  left: 42px;
+
+  transform: translateY(-50%);
+
+  transition: transform $animation-duration $timing-function,
+    color $animation-duration $timing-function,
+    font-size $animation-duration $timing-function,
+    line-height $animation-duration $timing-function;
+}
+
+.textarea-block {
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.textarea-comment {
+  width: 448px;
+  height: 120px;
+
+  padding: 12px 16px;
+
+  outline: none;
+
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  &:hover + .comment,
+  &:focus + .comment,
+  &:not(:placeholder-shown) + .comment {
+    transform: translateY(-32px);
+
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.comment {
+  position: absolute;
+
+  font-size: 14px;
+  line-height: 1.15;
+
+  top: 12px;
+  left: 16px;
+
+  transition: transform $animation-duration $timing-function,
+    color $animation-duration $timing-function,
+    font-size $animation-duration $timing-function,
+    line-height $animation-duration $timing-function,
+    border-color $animation-duration $timing-function;
+}
+
+.policy {
+  margin-bottom: 30px;
+
+  &-terms {
+    text-decoration-line: underline;
+
+    color: $accent-color;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    transition: color $animation-duration $timing-function;
+
+    &:hover {
+      color: green;
+    }
+  }
+}
+
+a:focus > .policy-terms {
+  color: green;
+}
+
+.button-send {
+  display: inline-block;
+
+  min-width: 200px;
+
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  line-height: 3;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  transition: color $animation-duration $timing-function,
+    background-color $animation-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $primary-white-color;
+  }
+}
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+  margin-bottom: 12px;
+}
