@@ -5,7 +5,7 @@ footer {
 
 .adress-footer {
   color: $primary-white-color;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contacts {
@@ -26,7 +26,7 @@ footer {
 
 .footer-mail {
   color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   transition: color $animation-duration $timing-function;
 
   &:hover,
@@ -50,7 +50,7 @@ footer {
 }
 
 footer > .container {
-  @extend %flex;
+  // @extend %flex;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -61,22 +61,27 @@ footer > .container {
   line-height: 1.14;
   text-transform: uppercase;
 
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-list {
   @extend %flex;
+  justify-content: center;
 }
 
 .footer-container-first {
-  margin-bottom: 60px;
-  margin-top: 60px;
+  // margin-bottom: 60px;
+  // margin-top: 60px;
 
-  margin-right: 69px;
+  // margin-right: 69px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container-second {
-  margin-right: 94px;
+  // margin-right: 94px;
+  margin-bottom: 60px;
 }
 
 .footer-container-third {
@@ -139,7 +144,8 @@ footer > .container {
 
 .form-field {
   padding: 18px 12px;
-  margin-right: 12px;
+  // margin-right: 12px;
+  margin-bottom: 20px;
   height: 50px;
   min-width: 358px;
 
@@ -215,10 +221,11 @@ footer > .container {
 }
 
 .footer-flex {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+  // display: flex;
+  // align-items: baseline;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  text-align: center;
 
-  margin-top: 72px;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }

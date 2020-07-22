@@ -13,14 +13,6 @@
   background-color: $secondary-gray-color;
 }
 
-.margin-item {
-  padding-top: 94px;
-  padding-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-}
-
 .nav-links {
   @extend %flex;
 }
@@ -38,11 +30,11 @@
 }
 
 .padding-item {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
 }
 
 /* Навигация */
@@ -51,6 +43,7 @@
   list-style: none;
 
   display: flex;
+  display: none;
 
   &-item {
     margin-right: 50px;
@@ -105,6 +98,8 @@
 
   display: flex;
   margin-left: auto;
+
+  display: none;
 
   &-list {
     margin-right: 30px;

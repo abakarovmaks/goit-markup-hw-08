@@ -1,11 +1,18 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 1600px;
   margin: auto;
 
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  &.apps {
+    display: none;
+    text-align: center;
+  }
+
   &.main,
-  &.apps,
   &.team,
   &.clients {
     text-align: center;

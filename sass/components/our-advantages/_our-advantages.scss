@@ -16,6 +16,7 @@
 
   &-bottom-title {
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &-words {
@@ -25,10 +26,19 @@
 
 .list {
   list-style: none;
-  display: flex;
+  // display: flex;
 
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-advantage {
+    // margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
 
   &-employment {
     list-style: none;
@@ -39,9 +49,9 @@
 
   &-team {
     list-style: none;
-    display: flex;
+    // display: flex;
 
-    padding-bottom: 94px;
+    padding-bottom: 60px;
   }
 
   &-services {
@@ -51,21 +61,11 @@
 
   &-item {
     display: block;
-    margin-right: 30px;
+    // margin-right: 30px;
     background-color: $primary-white-color;
-  }
 
-  &-advantage {
-    margin-right: 30px;
-
-    &:last-child {
-      margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
-}
-
-.clients-list-item {
-  display: block;
-  margin-right: 30px;
-  background-color: $primary-white-color;
 }

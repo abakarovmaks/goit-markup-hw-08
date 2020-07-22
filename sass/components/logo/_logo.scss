@@ -1,12 +1,18 @@
 /* Лого INDEX и PORTFOLIO*/
 
 .logo {
-  display: block;
-  margin-right: 85px;
+  // display: block;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+
+    margin-right: 85px;
+  }
 
   &-web {
     color: $accent-color;
@@ -21,8 +27,8 @@
 
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
   }
 
