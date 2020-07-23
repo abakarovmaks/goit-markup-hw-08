@@ -71,6 +71,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 .container.services {
   margin-bottom: 60px;
 }
@@ -98,6 +104,19 @@ img {
   background-color: #f5f4fa;
 }
 
+.button-menu {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+
 .services {
   margin-bottom: 94px;
 }
@@ -116,6 +135,15 @@ img {
   display: -ms-flexbox;
   display: flex;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .nav-list-item {
@@ -169,8 +197,34 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .adress-list {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .adress-list {
+    margin-right: 0;
+  }
+  .adress-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .adress-list:last-child {
@@ -185,8 +239,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: --color4 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
