@@ -3,6 +3,11 @@
 .advantage {
   color: $title-text-color-primary;
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &-upper-title {
     position: absolute;
     width: 1px;
@@ -17,6 +22,10 @@
   &-bottom-title {
     margin-bottom: 10px;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      text-align: start;
+    }
   }
 
   &-words {
@@ -31,12 +40,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &-advantage {
     // margin-right: 30px;
     margin-bottom: 30px;
 
-    &:last-child {
-      margin: 0;
+    // &:last-child {
+    //   margin: 0;
+    // }
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
   }
 
@@ -52,12 +74,25 @@
     // display: flex;
 
     padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -30px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &-item {
     display: block;
     // margin-right: 30px;
     background-color: $primary-white-color;
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 30px;

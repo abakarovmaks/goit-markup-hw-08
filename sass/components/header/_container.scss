@@ -21,12 +21,19 @@
   }
 
   &.main,
-  &.team,
-  &.clients {
+  &.team {
     text-align: center;
   }
 
   &-footer {
     @extend %flex;
+  }
+
+  &.clients {
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 60px;
+    }
   }
 }
