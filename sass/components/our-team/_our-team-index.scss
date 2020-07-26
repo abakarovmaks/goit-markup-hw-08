@@ -6,6 +6,13 @@
 
   font-size: 28px;
   line-height: 1.18;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
 }
 
 .workers {
@@ -36,6 +43,11 @@
     margin-right: 15px;
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .list-workers {
@@ -51,5 +63,29 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.our-team {
+  background-color: $secondary-gray-color;
+  padding-bottom: 94px;
+}
+
+.our-team-margin {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  font-size: 28px;
+  line-height: 1.18;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 45px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    padding-top: 94px;
   }
 }

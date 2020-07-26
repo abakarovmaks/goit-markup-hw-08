@@ -9,10 +9,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.our-team {
-  background-color: $secondary-gray-color;
-}
-
 .nav-links {
   @extend %flex;
 }
@@ -34,14 +30,6 @@
   margin-bottom: 94px;
 }
 
-.padding-item {
-  padding-top: 60px;
-  padding-bottom: 30px;
-
-  font-size: 28px;
-  line-height: 1.18;
-}
-
 /* Навигация */
 
 .nav-list {
@@ -53,6 +41,11 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+    margin-left: 0;
   }
 
   &-item {
@@ -120,6 +113,10 @@
     align-items: baseline;
   }
 
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+
   &-list {
     margin-right: 30px;
 
@@ -128,7 +125,15 @@
 
       &:not(:last-child) {
         margin-bottom: 10px;
+
+        @media screen and (min-width: $desktop) {
+          margin-bottom: 0;
+        }
       }
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
     }
 
     &:last-child {

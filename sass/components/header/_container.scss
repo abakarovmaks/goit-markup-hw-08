@@ -11,6 +11,10 @@
     width: 768px;
   }
 
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+
   &.services {
     margin-bottom: 60px;
   }
@@ -18,6 +22,10 @@
   &.apps {
     display: none;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
   }
 
   &.main,
@@ -33,7 +41,11 @@
     text-align: center;
 
     @media screen and (min-width: $tablet) {
-      padding-bottom: 60px;
+      padding-bottom: 75px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 94px;
     }
   }
 }

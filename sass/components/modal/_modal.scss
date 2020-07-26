@@ -6,7 +6,6 @@
 
   padding: 40px;
   min-height: 609px;
-  // min-width: 450px;
   min-width: 90%;
 
   background-color: $primary-white-color;
@@ -16,5 +15,10 @@
 
   @media screen and (min-width: $tablet) {
     min-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
