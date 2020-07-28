@@ -36,6 +36,8 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
+    box-shadow: none;
   }
 }
 
@@ -62,17 +64,30 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    margin-left: auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 84px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: auto;
-    margin-left: 0;
+    margin-right: 282px;
+  }
+
+  &-flex {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &-item {
     list-style: none;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.14;
+      margin-right: 50px;
+    }
   }
 
   &-item:last-child {
@@ -146,39 +161,43 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    align-items: baseline;
+    margin-top: 21px;
+    margin: 0;
   }
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
   }
 
-  &-list {
-    list-style: none;
-
-    &:not(:last-child) {
-      margin-bottom: 16px;
-
-      @media screen and (min-width: $tablet) {
-        margin-right: 0;
-
-        @media screen and (min-width: $desktop) {
-          margin-bottom: 0;
-        }
-      }
+  &-text {
+    @media screen and (min-width: $tablet) {
+      text-align: start;
     }
 
     @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+
+  &-list {
+    list-style: none;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+      margin-bottom: 0;
       margin-right: 30px;
     }
 
-    &:last-child {
-      margin-right: 0;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 16px;
     }
   }
 
