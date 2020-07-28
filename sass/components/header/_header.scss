@@ -1,5 +1,6 @@
 /* Хэдер INDEX и PORTFOLIO*/
 .nav {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -11,6 +12,76 @@
 
 .nav-links {
   @extend %flex;
+}
+
+.nav-container {
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 4px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  font-size: 20px;
+  z-index: 2;
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.button-menu .icon-open {
+  display: none;
+}
+
+.button-menu.is-open .icon-open {
+  display: block;
+}
+
+.button-menu:hover .icon-open,
+.button-menu:focus .icon-open {
+  fill: $accent-color;
+}
+
+.button-menu:hover .icon-close,
+.button-menu:focus .icon-close {
+  fill: $accent-color;
+}
+
+.nav-list {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  &-item {
+    list-style: none;
+  }
+
+  &-item:last-child {
+    margin-right: 0;
+  }
+}
+
+.button-menu.is-open .icon-close {
+  display: none;
 }
 
 .button-menu {
@@ -31,31 +102,6 @@
 }
 
 /* Навигация */
-
-.nav-list {
-  list-style: none;
-
-  display: flex;
-  display: none;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-right: auto;
-    margin-left: 0;
-  }
-
-  &-item {
-    margin-right: 50px;
-  }
-
-  &-item:last-child {
-    margin-right: 0;
-  }
-}
 
 .item {
   position: relative;
@@ -97,12 +143,7 @@
 /* Адресс INDEX и PORTFOLIO */
 
 .adress {
-  list-style: none;
-
-  display: flex;
-  margin-left: auto;
-
-  display: none;
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -118,13 +159,13 @@
   }
 
   &-list {
-    margin-right: 30px;
+    list-style: none;
 
-    @media screen and (min-width: $tablet) {
-      margin-right: 0;
+    &:not(:last-child) {
+      margin-bottom: 16px;
 
-      &:not(:last-child) {
-        margin-bottom: 10px;
+      @media screen and (min-width: $tablet) {
+        margin-right: 0;
 
         @media screen and (min-width: $desktop) {
           margin-bottom: 0;

@@ -14,11 +14,15 @@ body {
   color: $title-text-color-primary;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 button {
   border: none;
-  outline: none;
+  // outline: none;
   background-color: none;
 
   font-family: inherit;
