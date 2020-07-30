@@ -259,7 +259,7 @@ img {
 /* Навигация */
 .item {
   position: relative;
-  display: block;
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
