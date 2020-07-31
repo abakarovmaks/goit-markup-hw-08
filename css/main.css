@@ -624,7 +624,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .main-foto {
-    background-image: url("/images/Header-desktop.jpg");
+    background-image: url("/images/header-desktop.jpg");
   }
 }
 
