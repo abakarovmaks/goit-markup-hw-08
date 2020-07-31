@@ -245,13 +245,28 @@
             <li class="our-app">
               <div class="product-thumb">
                 <a href="#">
-                  <img
-                    src="./images/notebook1.jpg"
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/notebook.webp,
+                    ./images/notebook@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    >
+    
+                    <source
+                    srcset="
+                    ./images/notebook.jpg,
+                    ./images/notebook@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+    
+                    <img 
+                    src="./images/notebook.jpg"
                     alt="Ноутбук"
                     width="370"
-                    height="294"
-                  />
-
+                    />
+                </picture>
                   <p class="absolute">Десктопные приложения</p>
                 </a>
               </div>
@@ -259,12 +274,27 @@
             <li class="our-app">
               <div class="product-thumb">
                 <a href="#">
-                  <img
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/smartphone2.webp,
+                    ./images/smartphone2@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    >
+    
+                    <source
+                    srcset="
+                    ./images/smartphone2.jpg,
+                    ./images/smartphone2@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+    
+                    <img 
                     src="./images/smartphone2.jpg"
                     alt="Смартфон"
                     width="370"
-                    height="294"
-                  />
+                    />
                   <p class="absolute">Мобильные приложения</p>
                 </a>
               </div>
@@ -272,12 +302,27 @@
             <li class="our-app">
               <div class="product-thumb">
                 <a href="#">
-                  <img
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/monitor.webp,
+                    ./images/monitor@2x.webp 2x"
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    >
+    
+                    <source
+                    srcset="
+                    ./images/monitor.jpg,
+                    ./images/monitor@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+    
+                    <img 
                     src="./images/monitor.jpg"
-                    alt="Смартфон"
+                    alt="Монитор"
                     width="370"
-                    height="294"
-                  />
+                    />
                   <p class="absolute">Дизайнерский решения</p>
                 </a>
               </div>
