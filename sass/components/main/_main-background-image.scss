@@ -32,13 +32,13 @@
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
-      ),url('/images/header-mobile@2x.jpg');
+      ),url('../images/header-mobile@2x.jpg');
     }
   }
 
 @media screen and (min-width: $tablet) {
     .main-foto {
-      background-image: url('/images/header-tablet.jpg');
+      background-image: url('../images/header-tablet.jpg');
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -49,14 +49,14 @@
           to right,
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
-        ),url('/images/header-tablet@2x.jpg');
+        ),url('../images/header-tablet@2x.jpg');
     }
   }
 }
 
 @media screen and (min-width: $desktop) {
   .main-foto {
-    background-image: url('/images/header-desktop.jpg');
+    background-image: url('../images/header-desktop.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -67,7 +67,7 @@
           to right,
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
-        ),url('/images/header-desktop@2x.jpg');
+        ),url('../images/header-desktop@2x.jpg');
     }
   }
 }
