@@ -790,6 +790,9 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio {
@@ -808,6 +811,7 @@ img {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+    width: 354px;
   }
 }
 
