@@ -775,14 +775,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .list-projects {
-    margin: -30px;
+    margin: -15px;
     padding-bottom: 75px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .list-projects {
-    margin: -30px;
   }
 }
 
@@ -821,7 +815,6 @@ img {
   .card {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
-    margin: 15px;
   }
 }
 
