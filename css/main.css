@@ -808,8 +808,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .card {
-    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
-        flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     width: 354px;
   }

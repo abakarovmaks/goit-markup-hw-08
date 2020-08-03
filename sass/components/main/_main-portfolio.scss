@@ -119,7 +119,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
-    flex-basis: calc((100% - 4 * 15px) / 2);
+    // flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     width: 354px;
   }
